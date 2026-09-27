@@ -34,7 +34,7 @@ function WhyVirlix() {
       <div className="relative mx-auto max-w-7xl">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
-            WHY VIRLIX
+            WHY Sixth Collab
           </p>
 
           <h2 className="mt-4 text-4xl font-bold leading-tight md:text-6xl">
@@ -47,7 +47,7 @@ function WhyVirlix() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-gray-400">
-            Virlix Media combines creators, strategy, and creative production
+            Sixth Collab combines creators, strategy, and creative production
             to help ambitious brands stand out in the social-first world.
           </p>
         </div>

@@ -1,4 +1,5 @@
 "use client";
+<section id="contact" className="bg-[#09090B] px-6 py-24 text-white"></section>
 
 import { useState } from "react";
 

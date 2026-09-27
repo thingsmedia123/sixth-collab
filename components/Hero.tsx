@@ -1,64 +1,73 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 export default function Hero() {
   return (
-    <section
-  id="home"
-  className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#09090B] px-6"
->
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#09090B] px-6 pt-32 md:pt-36">
       {/* Background Glow */}
-      <div className="absolute left-20 top-20 h-72 w-72 rounded-full bg-purple-600/20 blur-[120px]" />
-      <div className="absolute bottom-20 right-20 h-72 w-72 rounded-full bg-cyan-500/20 blur-[120px]" />
+      <div className="absolute left-10 top-32 h-72 w-72 rounded-full bg-purple-600/20 blur-[120px]" />
+      <div className="absolute bottom-20 right-10 h-72 w-72 rounded-full bg-cyan-500/20 blur-[120px]" />
 
-      <div className="relative z-10 mx-auto max-w-7xl text-center">
-        <motion.span
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-400"
-        >
+      <div className="relative z-10 mx-auto max-w-6xl text-center">
+        {/* Tagline */}
+        <span className="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-5 py-2 text-sm font-medium text-cyan-300">
           🚀 India's Next-Gen Influencer Marketing Agency
-        </motion.span>
+        </span>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mt-8 text-6xl font-extrabold leading-tight text-white md:text-8xl"
-        >
-          Helping Brands
+        {/* Main Heading */}
+        <h1 className="mt-8 text-5xl font-extrabold leading-tight tracking-tight md:text-7xl">
+          We Make Brands
           <br />
-          <span className="bg-gradient-to-r from-purple-500 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
-            Go Viral.
+          <span className="bg-gradient-to-r from-purple-500 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
+            Impossible to Ignore.
           </span>
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="mx-auto mt-8 max-w-2xl text-lg text-gray-400"
-        >
-          Virlix Media connects brands with top creators to build viral
-          campaigns, engaging content, and measurable business growth.
-        </motion.p>
+        {/* Description */}
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
+          Sixth Collab connects ambitious brands with powerful creators,
+          scroll-stopping content, and strategic campaigns that turn
+          attention into real business growth.
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="mt-10 flex flex-wrap justify-center gap-5"
-        >
-          <button className="rounded-xl bg-gradient-to-r from-purple-600 to-cyan-500 px-8 py-4 font-semibold text-white transition hover:scale-105">
+        {/* Buttons */}
+        <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+          <a
+            href="#contact"
+            className="rounded-xl bg-gradient-to-r from-purple-600 to-cyan-500 px-8 py-4 font-semibold text-white transition hover:scale-105"
+          >
             Book Free Consultation
-          </button>
+          </a>
 
-          <button className="rounded-xl border border-gray-700 px-8 py-4 font-semibold text-white transition hover:border-cyan-400">
-            View Portfolio
-          </button>
-        </motion.div>
+          <a
+            href="#portfolio"
+            className="rounded-xl border border-white/10 bg-white/[0.03] px-8 py-4 font-semibold text-white transition hover:border-cyan-400/50"
+          >
+            View Our Work
+          </a>
+        </div>
+
+        {/* Stats */}
+        <div className="mt-20 grid grid-cols-2 gap-8 md:grid-cols-4">
+          <div>
+            <h2 className="text-4xl font-bold text-purple-400">500+</h2>
+            <p className="mt-1 text-gray-400">Campaigns</p>
+          </div>
+
+          <div>
+            <h2 className="text-4xl font-bold text-cyan-400">150+</h2>
+            <p className="mt-1 text-gray-400">Creators</p>
+          </div>
+
+          <div>
+            <h2 className="text-4xl font-bold text-purple-400">20M+</h2>
+            <p className="mt-1 text-gray-400">Audience Reach</p>
+          </div>
+
+          <div>
+            <h2 className="text-4xl font-bold text-cyan-400">98%</h2>
+            <p className="mt-1 text-gray-400">Client Satisfaction</p>
+          </div>
+        </div>
       </div>
     </section>
   );
